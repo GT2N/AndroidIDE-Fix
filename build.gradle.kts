@@ -89,10 +89,13 @@ subprojects {
   }
 }
 
-allprojects {
+subprojects {
     configurations.all {
-        resolutionStrategy {
-            force("jakarta.servlet:jakarta.servlet-api:6.0.0")
+        resolutionStrategy.eachDependency {
+            if (requested.group == "jakarta.servlet" && requested.name == "jakarta.servlet-api") {
+                useVersion("6.0.0")
+                because("6.2.0-M1 relies on a non-existent SNAPSHOT parent POM")
+            }
         }
     }
 }
