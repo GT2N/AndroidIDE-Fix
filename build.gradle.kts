@@ -89,4 +89,12 @@ subprojects {
   }
 }
 
+allprojects {
+    configurations.all {
+        resolutionStrategy {
+            force 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+        }
+    }
+}
+
 tasks.register<Delete>("clean") { delete(rootProject.layout.buildDirectory) }
