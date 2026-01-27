@@ -47,7 +47,7 @@ class TerminalBootstrapPackagesPlugin : Plugin<Project> {
     private const val BOOTSTRAP_PACKAGES_VERSION = "sdk-tools"
 
     private const val PACKAGES_DOWNLOAD_URL =
-      "https://github.com/GT2N/AndroidIDE-Fix/releases/download/%1\$s/bootstrap-fix-%2\$s.zip"
+      "https://cdn.pinguon.com.cn/https://github.com/GT2N/AndroidIDE-Fix/releases/download/%1\$s/bootstrap-fix-%2\$s.zip"
   }
 
   override fun apply(target: Project) {

@@ -96,4 +96,4 @@ lint/outputs/
 lint/tmp/
 # lint/reports/
 
-build.gradle.kts.bak
+build.gradle.kts.bak*.bak
