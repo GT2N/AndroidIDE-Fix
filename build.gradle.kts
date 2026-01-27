@@ -92,7 +92,7 @@ subprojects {
 allprojects {
     configurations.all {
         resolutionStrategy {
-            force 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+            force("jakarta.servlet:jakarta.servlet-api:6.0.0")
         }
     }
 }
