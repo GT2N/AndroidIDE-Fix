@@ -245,23 +245,9 @@ class IDEApplication : TermuxApplication() {
     ideLogcatReader = null
   }
 
-    companion object {
+  companion object {
 
-    /**
-     * Fix for Android 13+ compatibility:
-     * Wrap the Logger initialization in a lazy block with try-catch to prevent 
-     * crash caused by missing 'java.lang.Class.getModule()' in Android ART.
-     */
-    private val log: org.slf4j.Logger by lazy {
-        try {
-            LoggerFactory.getLogger(IDEApplication::class.java)
-        } catch (e: Throwable) {
-            // Logback EnvUtil.logbackVersionByModule() calls getModule() which fails on Android.
-            // Fallback to a No-Operation logger to prevent application crash.
-            android.util.Log.e("AndroidIDE_Fix", "Failed to initialize SLF4J/Logback, falling back to NOPLogger", e)
-            org.slf4j.helpers.NOPLogger.NOP_LOGGER
-        }
-    }
+    private val log = LoggerFactory.getLogger(IDEApplication::class.java)
 
     @JvmStatic
     lateinit var instance: IDEApplication
