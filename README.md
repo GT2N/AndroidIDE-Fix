@@ -17,9 +17,9 @@
 <p><br>
 
 <p align="center">
-<img src="https://img.shields.io/github/v/release/AndroidIDEOfficial/AndroidIDE?include_prereleases&amp;label=latest%20release" alt="Latest release">
-<img src="https://github.com/AndroidIDEOfficial/AndroidIDE/actions/workflows/build.yml/badge.svg" alt="Builds and tests">
-<img src="https://www.codefactor.io/repository/github/androidideofficial/androidide/badge/main" alt="CodeFactor">
+<img src="https://img.shields.io/github/v/release/GT2N/AndroidIDE-Fix?include_prereleases&amp;label=latest%20release" alt="Latest release">
+<img src="https://github.com/GT2N/AndroidIDE-Fix/actions/workflows/build.yml/badge.svg" alt="Builds and tests">
+<img src="https://www.codefactor.io/repository/github/GT2N/AndroidIDE-Fix/badge/main" alt="CodeFactor">
 <a href="https://crowdin.com/project/androidide"><img src="https://badges.crowdin.net/androidide/localized.svg" alt="Crowdin"></a>
 <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License"></p>
 
@@ -28,8 +28,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/AndroidIDEOfficial/AndroidIDE/issues/new?labels=bug&template=BUG.yml&title=%5BBug%5D%3A+">Report a bug</a> &nbsp; &#8226; &nbsp;
-  <a href="https://github.com/AndroidIDEOfficial/AndroidIDE/issues/new?labels=feature&template=FEATURE.yml&title=%5BFeature%5D%3A+">Request a feature</a> &nbsp; &#8226; &nbsp;
+  <a href="https://github.com/GT2N/AndroidIDE-Fix/issues/new?labels=bug&template=BUG.yml&title=%5BBug%5D%3A+">Report a bug</a> &nbsp; &#8226; &nbsp;
+  <a href="https://github.com/GT2N/AndroidIDE-Fix/issues/new?labels=feature&template=FEATURE.yml&title=%5BFeature%5D%3A+">Request a feature</a> &nbsp; &#8226; &nbsp;
   <a href="https://t.me/androidide_discussions">Join us on Telegram</a>
 </p>
 
@@ -65,51 +65,33 @@
 
 ## Installation
 
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.svg"
-    alt="Get it on F-Droid"
-    height="80">](https://f-droid.org/packages/com.itsaky.androidide)
 [<img src="https://github.com/Kunzisoft/Github-badge/raw/main/get-it-on-github.svg"
     alt="Get it on GitHub"
-    height="80">](https://github.com/AndroidIDEOfficial/AndroidIDE/releases)
+    height="80">](https://github.com/GT2N/AndroidIDE-Fix/releases)
 
-> _Please install AndroidIDE from trusted sources only i.e._
-> - [_The AndroidIDE website_](https://androidide.com)
-> - [_GitHub Releases_](https://github.com/AndroidIDEOfficial/AndroidIDE/releases)
-> - [_GitHub Actions_](https://github.com/AndroidIDEOfficial/AndroidIDE/actions?query=branch%3Adev+event%3Apush)
-> - [_F-Droid_](https://f-droid.org/packages/com.itsaky.androidide/)
+> _Please install AndroidIDE from this official fork only:_
+> - [_GitHub Releases (Fixed Version)_](https://github.com/GT2N/AndroidIDE-Fix/releases)
 
-- Download the AndroidIDE APK from the mentioned trusted sources.
-- Follow the
-  instructions [here](https://docs.androidide.com/tutorials/get-started.html) to
-  install the build tools.
+- Download the AndroidIDE APK from the GitHub releases above.
+- Follow the instructions [here](https://docs.androidide.com/tutorials/get-started.html) to install the build tools.
 
 ## Limitations
 
-- For working with projects in AndroidIDE, your project must use Android Gradle Plugin v7.2.0 or
-  newer. Projects with older AGP must be migrated to newer versions.
-- SDK Manager is already included in Android SDK and is accessible in AndroidIDE via its Terminal.
-  But, you cannot use it to install some tools (like NDK) because those tools are not built for
-  Android.
+- For working with projects in AndroidIDE, your project must use Android Gradle Plugin v7.2.0 or newer. Projects with older AGP must be migrated to newer versions.
+- SDK Manager is already included in Android SDK and is accessible via Terminal. Some tools (like NDK) cannot be installed as they are not built for Android.
 - No official NDK support because we haven't built the NDK for Android.
-
-The app is still being developed actively. It's in beta stage and may not be stable. if you have any
-issues using the app, please let us know.
 
 ## Contributing
 
 See the [contributing guide](./CONTRIBUTING.md).
-
 For translations, visit the [Crowdin project page](https://crowdin.com/project/androidide).
 
 ## Thanks to
 
-- [Rosemoe](https://github.com/Rosemoe) for the
-  awesome [CodeEditor](https://github.com/Rosemoe/sora-editor)
+- [Rosemoe](https://github.com/Rosemoe) for the awesome [CodeEditor](https://github.com/Rosemoe/sora-editor)
 - [Termux](https://github.com/termux) for [Terminal Emulator](https://github.com/termux/termux-app)
-- [Bogdan Melnychuk](https://github.com/bmelnychuk)
-  for [AndroidTreeView](https://github.com/bmelnychuk/AndroidTreeView)
-- [George Fraser](https://github.com/georgewfraser) for
-  the [Java Language Server](https://github.com/georgewfraser/java-language-server)
+- [Bogdan Melnychuk](https://github.com/bmelnychuk) for [AndroidTreeView](https://github.com/bmelnychuk/AndroidTreeView)
+- [George Fraser](https://github.com/georgewfraser) for the [Java Language Server](https://github.com/georgewfraser/java-language-server)
 
 Thanks to all the developers who have contributed to this project.
 
@@ -140,8 +122,7 @@ You should have received a copy of the GNU General Public License
 along with AndroidIDE.  If not, see https://www.gnu.org/licenses/.
 
 
-Any violations to the license can be reported either by opening an issue or writing a mail to us
-directly.
+Any violations to the license can be reported either by opening an issue or writing a mail to us directly.
 
 ---
 
@@ -154,9 +135,9 @@ directly.
 <p><br>
 
 <p align="center">
-<img src="https://img.shields.io/github/v/release/AndroidIDEOfficial/AndroidIDE?include_prereleases&amp;label=最新版本" alt="Latest release">
-<img src="https://github.com/AndroidIDEOfficial/AndroidIDE/actions/workflows/build.yml/badge.svg" alt="Builds and tests">
-<img src="https://www.codefactor.io/repository/github/androidideofficial/androidide/badge/main" alt="CodeFactor">
+<img src="https://img.shields.io/github/v/release/GT2N/AndroidIDE-Fix?include_prereleases&amp;label=最新版本" alt="Latest release">
+<img src="https://github.com/GT2N/AndroidIDE-Fix/actions/workflows/build.yml/badge.svg" alt="Builds and tests">
+<img src="https://www.codefactor.io/repository/github/GT2N/AndroidIDE-Fix/badge/main" alt="CodeFactor">
 <a href="https://crowdin.com/project/androidide"><img src="https://badges.crowdin.net/androidide/localized.svg" alt="Crowdin"></a>
 <img src="https://img.shields.io/badge/许可证-GPLv3-blue.svg" alt="License"></p>
 
@@ -165,8 +146,8 @@ directly.
 </p>
 
 <p align="center">
-  <a href="https://github.com/AndroidIDEOfficial/AndroidIDE/issues/new?labels=bug&template=BUG.yml&title=%5BBug%5D%3A+">反馈 Bug</a> &nbsp; &#8226; &nbsp;
-  <a href="https://github.com/AndroidIDEOfficial/AndroidIDE/issues/new?labels=feature&template=FEATURE.yml&title=%5BFeature%5D%3A+">提交功能请求</a> &nbsp; &#8226; &nbsp;
+  <a href="https://github.com/GT2N/AndroidIDE-Fix/issues/new?labels=bug&template=BUG.yml&title=%5BBug%5D%3A+">反馈 Bug</a> &nbsp; &#8226; &nbsp;
+  <a href="https://github.com/GT2N/AndroidIDE-Fix/issues/new?labels=feature&template=FEATURE.yml&title=%5BFeature%5D%3A+">提交功能请求</a> &nbsp; &#8226; &nbsp;
   <a href="https://t.me/androidide_discussions">加入 Telegram 群组</a>
 </p>
 
@@ -202,34 +183,25 @@ directly.
 
 ## 安装指南
 
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.svg"
-    alt="F-Droid"
-    height="80">](https://f-droid.org/packages/com.itsaky.androidide)
 [<img src="https://github.com/Kunzisoft/Github-badge/raw/main/get-it-on-github.svg"
     alt="GitHub"
-    height="80">](https://github.com/AndroidIDEOfficial/AndroidIDE/releases)
+    height="80">](https://github.com/GT2N/AndroidIDE-Fix/releases)
 
-> _请务必从以下受信任的渠道安装 AndroidIDE：_
-> - [_AndroidIDE 官网_](https://androidide.com)
-> - [_GitHub Releases_](https://github.com/AndroidIDEOfficial/AndroidIDE/releases)
-> - [_GitHub Actions_](https://github.com/AndroidIDEOfficial/AndroidIDE/actions?query=branch%3Adev+event%3Apush)
-> - [_F-Droid_](https://f-droid.org/packages/com.itsaky.androidide/)
+> _请务必从以下受信任的修复版渠道安装：_
+> - [_GitHub Releases (修复版本)_](https://github.com/GT2N/AndroidIDE-Fix/releases)
 
-- 从上述渠道下载 AndroidIDE APK。
+- 从上述 GitHub 链接下载 AndroidIDE APK。
 - 按照 [此处教程](https://docs.androidide.com/tutorials/get-started.html) 安装构建工具。
 
 ## 使用限制
 
-- 你的项目必须使用 **Android Gradle Plugin (AGP) v7.2.0** 或更高版本。较旧的项目必须进行迁移。
+- 你的项目必须使用 **Android Gradle Plugin (AGP) v7.2.0** 或更高版本。
 - SDK 管理器已包含在 SDK 中，可在终端访问。但部分工具（如 NDK）无法安装，因为它们并非为 Android 原生系统构建。
 - **暂不支持官方 NDK**，因为我们尚未在 Android 上构建 NDK。
-
-该应用目前仍处于活跃开发阶段（Beta 版），可能存在不稳定情况。如有问题，请反馈给我们。
 
 ## 贡献
 
 请参阅 [贡献指南](./CONTRIBUTING.md)。
-
 翻译工作请访问 [Crowdin 项目页面](https://crowdin.com/project/androidide)。
 
 ## 致谢
